@@ -11,3 +11,6 @@ applications:
   timeout: 180
   env:
     SPRING_PROFILES_ACTIVE: cloud
+    CLIENT_ID: 3f106fff080f79e7c0ca
+    CLIENT_SECRET: 238809e4c45ab7b7a798e47ecc49cceee16f826e
+    

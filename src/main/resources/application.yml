@@ -3,3 +3,19 @@ server:
 feign:
   hystrix:
     enabled: true
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: ${CLIENT_ID}
+      clientSecret: ${CLIENT_SECRET}
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+      preEstablishedRedirectUri: https://{YOUR-APP-URL}/login
+      registered-redirect-uri: https://{YOUR-APP-URL}/login
+      use-current-uri: false
+    resource:
+      userInfoUri: https://api.github.com/user
