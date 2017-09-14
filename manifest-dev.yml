@@ -1,0 +1,13 @@
+
+---
+applications:
+- name: attendeeviewer
+  memory: 1024M
+  instances: 1
+  buildpack: java_buildpack
+  random-route: true
+  services:
+  - configServer
+  timeout: 180
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
