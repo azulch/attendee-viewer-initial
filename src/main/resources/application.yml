@@ -3,7 +3,6 @@ server:
 feign:
   hystrix:
     enabled: true
-
 security:
   basic:
     enabled: false
@@ -14,8 +13,8 @@ security:
       accessTokenUri: https://github.com/login/oauth/access_token
       userAuthorizationUri: https://github.com/login/oauth/authorize
       clientAuthenticationScheme: form
-      preEstablishedRedirectUri: https://{YOUR-APP-URL}/login
-      registered-redirect-uri: https://{YOUR-APP-URL}/login
+      preEstablishedRedirectUri: https://attendeeviewer-azulch.cfapps.io/login
+      registered-redirect-uri: https://attendeeviewer-azulch.cfapps.io/login
       use-current-uri: false
     resource:
       userInfoUri: https://api.github.com/user
